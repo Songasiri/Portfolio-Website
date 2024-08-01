@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="STYLE.css">
+        <script src="https://kit.fontawesome.com/4505633546.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Siri..jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate</p>
+                <h1>Hi, I'm <span>Siri</span> Songa<br> Student at SVECW</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am songa siri currently pursuing B-Tech final year in the stream of 
+                        computer science and engineering in shri vishnu engineering college for women, Bhimavaram.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Python</span><br>Problem solving with Python</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Data structures</span><br>Different alogorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Front End Developer at
+                                 Amaravathi</li>
+                            <li><span>2023</span><br>Cyber Securityintern at Edu Skill</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Computer Science and Engineering from 
+                            SVECW.</li>
+                            <li><span>2019-2021</span><br>Intermediate from Chaitanya.</li>
+                            <li><span>2018-2019</span><br>10th Standard from Holy
+                            Trinity E.M High School.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!----------certificates--------------------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="certificates-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>Attended online certification course in IBM to learn cloud computing,
+                        the course name is introduction to cloud computing.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-rocketchat"></i>
+                    <h2>Chatgpt</h2>
+                    <p>Attended online certification course in Edx to learn prompt engineering,
+                        the course name is prompt engineering and advanced chatgpt. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>AWS-ML</h2>
+                    <p>Attended online certification course in Edx to learn machine learning on aws,
+                        the course name is introduction to machine learning on aws. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------projects------------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                   <img src="images/face-recognition-attendance-system.jpg">
+                   <div class="layer">
+                    <h3>Face-Recognition-Attendance-System</h3>
+                    <p>face face-recognition-attendance-system which is useful to  take
+                        attendce for multiple students at a time without any errors.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+
+                <div class="project">
+                    <img src="images/energy-demand.jpg">
+                    <div class="layer">
+                        <h3>Energy-Demand-Forecasting</h3>
+                        <p>forecasting energy demand by taking previous energy consumption data as input to 
+                            the machine learning algorithms.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                       </div>
+                 </div>
+
+                <div class="project">
+                   <img src="images/project-upload-images.jpg">
+                   <div class="layer">
+                    <h3>Project-Guide</h3>
+                    <p>website to upload projects which are done by the seniors
+                        to showcase their projects to juniors.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+        
+    </div>
+    <!--------------contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>songasiri28@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>xxxxxx8688</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/21B01A05H3_S.Siri.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Siri.Made with <i class="fa-solid fa-heart"></i> by me</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzSCthQhcjqM9oZEw3Klpw2fmRVuUovI_kWaaiAcLesz4w2sfbqT0aosiwb4YNILQ3y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+
+    </body>
+</html>
